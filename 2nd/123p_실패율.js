@@ -12,7 +12,8 @@ function solution(N, stages) {
         }  
     }
 
-    // 각 스테이지 별 (클리어 못한 플레이어 수)/(스테이지에 도전한 플레이어 수)를 구하고, 각 수치의 인덱스 값을 보존하기 위하여 배열에 저장함.
+    // 각 스테이지 별 (클리어 못한 플레이어 수)/(스테이지에 도전한 플레이어 수)를 구하고,
+    // 각 수치의 인덱스 값을 보존하기 위하여 배열에 저장함.
     let failureOfStages = challengingCnt.map((v, i) => {
         const failure = v/players;
         players -= v;
